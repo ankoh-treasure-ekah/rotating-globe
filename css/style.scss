@@ -1,0 +1,283 @@
+.flexer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.t-map {
+    z-index: -1;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    width: 45rem;
+    height: 45rem;
+    background: #262c55;
+    border-radius: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 18%;
+    left: 20.3%;
+    // background: url('keyframes.png') no-repeat center fixed;
+    // background-size: cover;
+    
+    img {
+        // transform: scale(1.4);
+        // padding-top: 50px;
+        // width: 100%;
+        height: 120%;
+        animation-name: slide;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        // animation-direction: alternate-reverse;
+        
+    }
+}
+
+@keyframes slide {
+    0%{transform: translateX(0vw)};
+    100%{transform: translateX(-112.5rem);}
+    
+}
+
+
+
+  .second {
+    position: relative;
+
+   
+  }
+  
+
+
+  .orange {
+    stroke-dasharray: 1509;
+    stroke-dashoffset: 500;
+    animation: dash2 3s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes dash2 {
+    0% {
+      stroke-dashoffset: 1509;
+    }
+    20% {
+      stroke-dashoffset: 40;
+    }
+
+    40% {
+        stroke-dashoffset: 1509;
+    }
+
+    80% {
+        stroke-dashoffset: 3018;
+    }
+
+    100%{
+        stroke-dashoffset: 1509;
+    }
+}
+
+
+.blue {
+    stroke-dasharray: 1552;
+    stroke-dashoffset: 500;
+    animation: dash3 3s linear infinite;
+    animation-delay: 0.8s;
+
+}
+
+@keyframes dash3 {
+    0% {
+      stroke-dashoffset: 1552;
+    }
+    20% {
+      stroke-dashoffset: 40;
+    }
+
+    40% {
+        stroke-dashoffset: 1552;
+    }
+
+    80% {
+        stroke-dashoffset: 3104;
+    }
+
+    100%{
+        stroke-dashoffset: 1552;
+    }
+}
+
+.pink {
+    stroke-dasharray: 1380;
+    stroke-dashoffset: 500;
+    animation: dash3 3s linear infinite;
+    animation-delay: 1s;
+
+}
+
+@keyframes dash3 {
+    0% {
+      stroke-dashoffset: 1380;
+    }
+    20% {
+      stroke-dashoffset: 0;
+    }
+
+    40% {
+        stroke-dashoffset: 1380;
+    }
+
+    80% {
+        stroke-dashoffset: 2760;
+    }
+
+    100%{
+        stroke-dashoffset: 1380;
+    }
+}
+
+.cyan {
+    stroke-dasharray: 1509;
+    stroke-dashoffset: 500;
+    animation: dash4 3s linear infinite;
+    animation-delay: 1.2s;
+
+}
+
+@keyframes dash4 {
+    0% {
+      stroke-dashoffset: 1509;
+    }
+    20% {
+      stroke-dashoffset: 0;
+    }
+
+    40% {
+        stroke-dashoffset: 1509;
+    }
+
+    80% {
+        stroke-dashoffset: 3018;
+    }
+
+    100%{
+        stroke-dashoffset: 1509;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.global_reach{
+    max-width: 80%;
+    margin: 0 auto;
+
+    .going-global{
+        display: flex;
+        // .global-anim{}
+        .global_reach_text{
+            h1{
+                margin-bottom: 100px;
+                font-size: 80px;
+                margin-top: 150px;
+                font-family: milik;
+                font-weight: 500;
+                line-height: 86px;
+                color: #1d1d1d;
+    
+                span{
+                    color: #6672c7;
+                }
+            }
+            .global_text{
+    
+                h3{
+                    border-left: 2px solid black;
+                    font-size: 20px;
+                    font-family: moderat-bold;
+                    padding-left: 30px;
+                    padding-bottom: 5px;
+    
+                }
+                .currencies{
+                    color: #0abab0;
+                }
+                p{
+                    padding: 5px 0px 40px 30px;
+                    border-left: 0.3px dashed grey;
+                    font-size: 16px;
+                    font-family: moderat-light;
+                    line-height: 1.5;
+                }
+                .list_1{
+                    border-left: 0.3px dashed grey;
+                    padding-left: 30px;
+                    display: flex;
+                    column-gap: 80px;
+                
+    
+                    ul{
+                        li{
+                            color: #1d1d1d;
+                            list-style: none;
+                            padding-top: 20px;
+                            font-size: 16px;
+                            font-family: moderat-light;
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .create_financial_account{
+    margin-top: 18%;
+    background-color: #000000e3;
+    border-radius: 20px;
+    padding: 50px 150px;
+    margin-bottom: 200px;
+    width: 100%;
+    box-shadow: 2px 20px 40px rgba(128, 128, 128, 0.849);
+
+    h1{
+        color: #fff;
+        font-size: 50px;
+        padding-top: 30px;
+        font-family: milik;
+    }
+    p{
+        color: #fff;
+        margin-top: 30px;
+        font-weight: 300;
+        font-family: moderat-light;
+        font-size: 22px;
+        margin-bottom: 100px;
+        line-height: 1.5;
+        width: 90%;
+    }
+    div{
+        font-size: 16px;
+        color:white;
+        border: none;
+        font-weight:500;
+        font-family: moderat-bold;
+        padding-bottom: 30px;
+    }
+}
+}
+
